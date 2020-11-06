@@ -8,15 +8,345 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
+    .block-title{
+        font-size: 76px;
+    }
 
+    .home-management-item__img{
+        width: 80px;
+    }
+
+    .item-title{
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .home-one-place-block-top{
+        flex-wrap: wrap;
+    }
+
+    .home-once-place-block-top-right{
+        width: 100%;
+        height: 500px;
+    }
+
+    .home-once-place-block-top-left{
+        order: 2;
+        width: 100%;
+        padding: 50px 10%;
+    }
+
+    .home-one-place-block-content-wrap{
+        max-width: initial;
+    }
+
+    .home-one-place-block-frame{
+        top: 400px;
+        width: 90%;
+    }
+
+    .home-one-place-block-frame-rect{
+        width: 100%;
+        height: 700px;
+    }
+
+    .home-one-place-block-bottom .home-one-place-block-content-wrap{
+        margin-left: 5%;
+    }
+
+    .home-one-place-block-bottom{
+        margin-top: 650px;
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    .footer-text-right{
+        display: none;
+    }
+
+    .footer-link-wrap{
+        display: none
+    }
+
+    .footer-col-wrap{
+        text-align: center;
+    }
+
+    .form-container .gform_fields .gfield:nth-of-type(1){
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    .form-container .gform_fields .gfield:nth-of-type(2){
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .form-container .gform_fields .gfield:nth-of-type(4){
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    .form-container .gform_footer{
+        position: relative;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .form-container input[type="submit"]{
+        background: #232137;
+    }
+
+    .home-management-item-col{
+        text-align: left;
+        margin-bottom: 80px;
+    }
+
+    .home-connect-item-col{
+        text-align: left;
+        margin-bottom: 80px;
+    }
+
+    .footer--desktop{
+        display: none;
+    }
+
+    .footer--mobile{
+        display: block;
+    }
+
+    .footer-contact-row{
+        display: flex;
+        align-items: center;
+        padding: 20px 30px;
+        border-top: 1px solid #707070;
+    }
+
+    .footer-contact-row:last-of-type{
+        border-bottom: 1px solid #707070;
+    }
+
+    .footer-contact__img{
+        width: 50px;
+        margin-right: 30px;
+        margin-left: 20px;
+    }
+
+    .footer-contact-info{
+        font-size: 24px;
+        color: #FFFFFF;
+        text-align: left;
+    }
+
+    .footer-contact-title{
+        font-weight: 100;
+    }
+
+    .footer-col-wrap{
+        margin-bottom: 50px;
+    }
+
+    .footer-social-links{
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .footer-text-right{
+        margin-top: 50px;
+    }
+
+    .navbar-nav .menu-item .nav-link{
+        padding: 0px;
+    }
+
+    .navbar-nav .menu-item{
+        text-align: center;
+        padding: 10px;
+    }
+
+    #navbar-content{
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .header-link{
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+    .block-title{
+        font-size: 56px;
+    }
 
+    .home-hero-block-top{
+        padding-top: 100px;
+    }
+
+    .home-hero-block-top .home-block-content-wrap{
+        padding: 0px 20px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .home-hero-block-bottom .home-block-content-wrap{
+        padding: 0px 20px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        text-align: left;
+    }
+
+    .home-desc{
+        font-size: 26px;
+        line-height: 35px;
+    }
+
+    .item-title{
+        font-size: 26px;
+    }
+
+    .block-desc{
+        font-size: 18px;
+    }
+
+    .home-management-item-col{
+        margin-bottom: 50px;
+    }
+
+    .home-once-place-block-top-right{
+        height: 350px;
+    }
+
+    .home-one-place-block-frame{
+        top: 250px;
+    }
+
+    .block-title--small{
+        text-align: left;
+        font-size: 38px;
+    }
+
+    .container--large-767{
+        width: 90%;
+        margin: auto;
+        max-width: initial;
+    }
+
+    .footer-contact__img{
+        width: 40px;
+    }
 }
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 576px) {
+    .block-title{
+        font-size: 36px;
+    }
 
+    .home-desc{
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .home-hero-block-bottom .home-block-content-wrap{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .link{
+        font-size: 14px;
+    }
+
+    .home-link-wrap{
+        margin-top: 30px;
+    }
+
+    .home-hero-block-bottom{
+        padding-bottom: 50px;
+    }
+
+    .home-management-item__img{
+        width: 60px;
+    }
+
+    .item-title{
+        font-size: 22px;
+    }
+
+    .home-management-item-col{
+        margin-bottom: 30px;
+    }
+
+    .home-once-place-block-top-right{
+        height: 250px;
+    }
+
+    .home-one-place-block-frame{
+        top: 150px;
+    }
+
+    .home-one-place-block-frame-img{
+        width: 250px;
+    }
+
+    .home-one-place-block-bottom{
+        margin-top: 500px;
+    }
+
+    .signup-block{
+        padding-bottom: 60px;
+    }
+
+    .home-connect-item__img{
+        width: 60px;
+    }
+
+    .home-connect-link-wrap{
+        margin-top: 30px;
+    }
+
+    .home-connect-item-col{
+        margin-bottom: 50px;
+    }
+
+    .footer{
+        padding-top: 60px;
+        padding-bottom: 0px;
+    }
+
+    .footer-contact-info{
+        font-size: 18px;
+    }
+
+    .footer-contact-title{
+        font-size: 18px;
+        font-weight: 100;
+    }
+
+    .footer-contact-row{
+        padding: 15px 10px;
+    }
+
+    .footer-contact__img{
+        width: 30px;
+    }
+
+    .footer-social-links{
+        margin-top: 0px;
+    }
+
+    .footer-text-right{
+        margin-top: 30px;
+    }
+
+    .navbar-nav .menu-item{
+        padding: 5px;
+    }
+
+    .navbar-nav .menu-item .nav-link{
+        font-size: 16px;
+    }
 }

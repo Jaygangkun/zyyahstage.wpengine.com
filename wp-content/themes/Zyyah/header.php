@@ -32,7 +32,8 @@
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-    
+	
+	<link rel="stylesheet" href="https://use.typekit.net/aoh1ebz.css">
 		<!-- wordpress head functions -->
 		<?php wp_head(); ?>
 		<!-- end of wordpress head -->
@@ -47,16 +48,36 @@
   	<nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
           
-          <a class="navbar-brand" href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a>
-        	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="<?php esc_html_e( 'Toggle Navigation', 'theme-textdomain' ); ?>">
-        		<span class="navbar-toggler-icon"></span>
-        	</button>
-        
-        	<div class="collapse navbar-collapse" id="navbar-content">
-          	
-          	<?php primer_main_nav(); ?>
-          	
-        	</div><!-- end #navbar-content -->
+			<a class="navbar-brand" href="<?php echo home_url(); ?>">
+				<?php
+				$logo = get_field('header_logo', 'option');
+				if($logo){
+					?>
+					<img class="navbar-brand__img" src="<?php echo $logo['url']?>" alt="<?php echo $logo['alt'] ?>">
+					<?php
+				}
+				else{
+					bloginfo('name');
+				}
+				?>
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="<?php esc_html_e( 'Toggle Navigation', 'theme-textdomain' ); ?>">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+		
+			<div class="collapse navbar-collapse" id="navbar-content">
+			
+				<?php primer_main_nav(); ?>
+				<?php
+				$header_link = get_field('header_link', 'option');
+				if($header_link){
+					?>
+					<a class="link link--purple header-link" href="<?php echo $header_link['url']?>" target="<?php echo $header_link['target']?>"><?php echo $header_link['title']?></a>
+					<?php
+				}
+				?>
+			
+			</div><!-- end #navbar-content -->
             	
         </div><!-- end .container -->
       </nav>

@@ -100,7 +100,55 @@ function my_acf_init() {
 		));
 		
 		
-		
+		acf_register_block(array(
+			'name'				=> 'home-hero-block',
+			'title'				=> __('Home Hero Block'),
+			'description'		=> __('A dummy starter block.'),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'custom',
+			'icon'				=> 'slides',
+			'keywords'			=> array( 'test' )
+		));
+
+		acf_register_block(array(
+			'name'				=> 'home-management-block',
+			'title'				=> __('Home Management Block'),
+			'description'		=> __('A dummy starter block.'),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'custom',
+			'icon'				=> 'slides',
+			'keywords'			=> array( 'test' )
+		));
+
+		acf_register_block(array(
+			'name'				=> 'home-one-place-block',
+			'title'				=> __('Home One Place Block'),
+			'description'		=> __('A dummy starter block.'),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'custom',
+			'icon'				=> 'slides',
+			'keywords'			=> array( 'test' )
+		));
+
+		acf_register_block(array(
+			'name'				=> 'home-connect-block',
+			'title'				=> __('Home Connect Block'),
+			'description'		=> __('A dummy starter block.'),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'custom',
+			'icon'				=> 'slides',
+			'keywords'			=> array( 'test' )
+		));
+
+		acf_register_block(array(
+			'name'				=> 'signup-block',
+			'title'				=> __('Signup Block'),
+			'description'		=> __('A dummy starter block.'),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'custom',
+			'icon'				=> 'slides',
+			'keywords'			=> array( 'test' )
+		));
 	}
 }
   
