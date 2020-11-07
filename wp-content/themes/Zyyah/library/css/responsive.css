@@ -10,6 +10,7 @@
 @media only screen and (max-width : 992px) {
     .block-title{
         font-size: 76px;
+        line-height: 76px;
     }
 
     .home-management-item__img{
@@ -174,12 +175,85 @@
         margin-top: 10px;
         margin-bottom: 20px;
     }
+
+    .how-we-work-hero-content{
+        display: block;
+    }
+
+    .how-we-work-hero-content-wrap{
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-bottom: 300px;
+    }
+
+    .how-we-work-hero-img-wrap{
+        width: 320px;
+    }
+
+    .how-we-work-hero-img-wrap{
+        width: 320px;
+        height: 480px;
+        margin-top: -240px;
+        margin-left: 50%;
+        transforM: translateX(-50%);
+    }
+
+    .how-we-work-hero-top{
+        padding-top: 0px;
+        height: 400px;
+    }
+
+    .how-we-work-ownership-block .block-title--small{
+        text-align: left;
+    }
+
+    .how-we-work-professionals-main{
+        flex-wrap: wrap;
+    }
+
+    .how-we-work-professionals-content{
+        order: 2;
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+
+    .how-we-work-professionals-rect{
+        right: 0px;
+        top: -100px;
+        bottom: 0px;
+    }
+
+    .how-we-work-professionals-main--img-align-left .how-we-work-professionals-rect{
+        left: 0px;
+    }
+
+    .how-we-work-list-block .block-title--small{
+        text-align: left;
+    }
+
+    .how-we-work-list-block .block-desc{
+        text-align: left;
+    }
+
+    .how-we-work-list-col{
+        text-align: left;
+        margin-bottom: 50px;
+        padding: 0px 15px;
+    }
+
+    .how-we-work-professionals-image{
+        margin-left: -5vw;
+        margin-right: -5vw;
+        padding-top: 530px;
+    }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
     .block-title{
         font-size: 56px;
+        line-height: 56px;
     }
 
     .home-hero-block-top{
@@ -238,12 +312,33 @@
     .footer-contact__img{
         width: 40px;
     }
+
+    .how-we-work-hero-top{
+        height: 300px;
+    }
+
+    .how-we-work-hero-rect{
+        top: -100px;
+    }
+
+    .how-we-work-professionals-image{
+        padding-top: 450px;
+    }
+
+    .how-we-work-professionals-content{
+        padding: 50px;
+    }
+
+    .how-we-work-professionals-top-title{
+        font-size: 30px;
+    }
 }
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 576px) {
     .block-title{
         font-size: 36px;
+        line-height: 36px;
     }
 
     .home-desc{
@@ -348,5 +443,50 @@
 
     .navbar-nav .menu-item .nav-link{
         font-size: 16px;
+    }
+
+    .how-we-work-professionals-image{
+        padding-top: 350px;
+    }
+
+    .how-we-work-professionals-top-title{
+        font-size: 26px;
+    }
+}
+
+@media only screen and (max-width : 400px) {
+    .block-title--small {
+        font-size: 32px;
+    }
+
+    .how-we-work-professionals-top-title{
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .how-we-work-professionals-image{
+        padding-top: 250px;
+    }
+
+    .how-we-work-professionals-rect{
+        top: -80px;
+    }
+
+    .how-we-work-professionals-content{
+        padding: 30px 25px;
+    }
+
+    .how-we-work-list-item__img{
+        height: 60px;
+    }
+
+    .how-we-work-list-block .link-wrap{
+        margin-top: 10px;
+    }
+
+    .how-we-work-hero-content-wrap{
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 30px;
     }
 }
