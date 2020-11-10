@@ -18,7 +18,7 @@
 					<div class="how-we-work-hero-rect"></div>
 				</div>
 				<div class="how-we-work-hero-img-wrap">
-					<img class="how-we-work-hero__img" src="<?php echo get_template_directory_uri()?>/library/images/phone.png" alt="Phone Image">
+					<img class="how-we-work-hero__img" src="<?php echo get_template_directory_uri()?>/library/images/how-we-work-phone.png" alt="Phone Image">
 				</div>
 			</div>
 		</div>

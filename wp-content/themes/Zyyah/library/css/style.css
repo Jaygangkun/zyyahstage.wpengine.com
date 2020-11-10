@@ -481,6 +481,20 @@ section {
 	background-position: center center;
 }
 
+a {
+  -webkit-transition: all 0.2s ease;/* Safari 3.2+, Chrome */
+  -moz-transition: all 0.2s ease;/* Firefox 4-15 */
+  -o-transition: all 0.2s ease;/* Opera 10.5-12.00 */
+  transition: all 0.2s ease;/* Firefox 16+, Opera 12.50+ */
+}
+
+.wp-block {
+  max-width: 100%;
+}
+
+.block-editor-block-switcher__toggle {
+  overflow: hidden;
+}
 
 /* ==========================================================================
    Custom CSS
@@ -498,34 +512,46 @@ body{
   font-size: 18px;
   color: #908F9A;
   padding: 0px 45px;
-  font-weight: 100;
+  font-weight: normal;
+  letter-spacing: .8px;
+}
+
+.navbar-nav .menu-item.active .nav-link {
+  color: #908F9A;
+  font-weight: bold;
+}
+
+.navbar-nav .menu-item .nav-link:hover {
+  color: #908F9A;
 }
 
 .navbar-nav .menu-item:first-of-type .nav-link{
   padding-left: 0px;
 }
 
-.link{
+.link {
   font-size: 18px;
-  padding: 10px 40px;
+  padding: 20px 50px;
   display: inline-block;
-  border-radius: 26px;
+  border-radius: 31px;
   text-decoration: none;
   cursor: pointer;
+  letter-spacing: .5px;
+  line-height: 1;
 }
 
 .link:hover{
   text-decoration: none;
 }
 
-.link--purple{
+.link--purple {
   color: #FFFFFF !important;
   background: #785AF2;
-  border: 2px solid #785AF2;
 }
 
 .link--purple:hover{
   color: #FFFFFF;
+  background: #6c50d9;
 }
 
 .link--purple-outline{
@@ -550,6 +576,7 @@ body{
 
 .header-link{
   margin-left: 45px;
+  padding: 15px 40px;
 }
 
 .footer{
@@ -587,6 +614,7 @@ body{
 }
 
 .footer-email-link:hover{
+  color: #6c50d9;
   text-decoration: none;
 }
 
@@ -616,7 +644,8 @@ body{
   font-size: 18px;
   color: #908F9A;
   padding-left: 50px;
-  font-weight: 100;
+  letter-spacing: .8px;
+  font-weight: normal;
 }
 
 .footer-nav .menu-item a:hover{
@@ -631,6 +660,10 @@ body{
 .footer-social-links{
   text-align: right;
   margin-top: 100px;
+}
+
+.footer-social-links a:hover {
+  opacity: .8;
 }
 
 .footer-link-wrap{
@@ -784,6 +817,30 @@ body{
   padding-left: 0px;
 }
 
+.form-container .gform_fields .gfield select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+
+.ginput_container_select {
+  position: relative;
+}
+
+.ginput_container_select:after {
+  font-family: FontAwesome;
+  content: '\f0d7';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  pointer-events: none;
+  color: #785AF2;
+  font-size: 32px;
+}
+
 .form-container .gform_fields .gfield input,
 .form-container .gform_fields .gfield select{
   padding: 20px;
@@ -791,6 +848,12 @@ body{
   font-size: 18px;
   width: 100%;
   font-family: sofia-pro, sans-serif;
+  border: 2px solid transparent;
+  
+  -webkit-transition: all 0.2s ease;/* Safari 3.2+, Chrome */
+  -moz-transition: all 0.2s ease;/* Firefox 4-15 */
+  -o-transition: all 0.2s ease;/* Opera 10.5-12.00 */
+  transition: all 0.2s ease;/* Firefox 16+, Opera 12.50+ */
 }
 
 .form-container .gform_fields .gfield input::-webkit-input-placeholder { /* Edge */
@@ -805,21 +868,38 @@ body{
   color: #C3C3C3;
 }
 
+.form-container .gform_fields .gfield input:focus {
+  border: 2px solid #785AF2;
+}
+
 .form-container input[type="submit"]{
+  font-family: sofia-pro, sans-serif;
+  letter-spacing: .5px;
+  line-height: 1;
   font-size: 18px;
-  padding: 19px 40px;
+  padding: 20px 90px;
   display: inline-block;
   border-radius: 60px;
   text-decoration: none;
   cursor: pointer;
-  color: #FFFFFF;
   color: #FFFFFF !important;
   background: #785AF2;
   border: 2px solid #FFFFFF;
-  appearance: none;
-  min-width: 260px;
   text-transform: uppercase;
   font-weight: bold;
+  
+  -webkit-transition: all 0.2s ease;/* Safari 3.2+, Chrome */
+  -moz-transition: all 0.2s ease;/* Firefox 4-15 */
+  -o-transition: all 0.2s ease;/* Opera 10.5-12.00 */
+  transition: all 0.2s ease;/* Firefox 16+, Opera 12.50+ */
+}
+
+.form-container input[type="submit"]:hover {
+  background: #6c50d9;
+}
+
+.form-container .gform_fields .gfield {
+  margin-bottom: 25px;
 }
 
 .form-container .gform_fields .gfield:nth-of-type(1){
@@ -838,6 +918,36 @@ body{
   width: calc(50% - 20px);
   margin-right: 20px;
   display: inline-block;
+}
+
+.validation_error {
+  color: #721c24;
+  background: #f8d7da;
+  border: 1px solid #f5c6cb;
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.gform_confirmation_message {
+  color: #155724;
+  background: #d4edda;
+  border: 1px solid #c3e6cb;
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.validation_message {
+  display: none;
+}
+
+.gform_fields label.gfield_label {
+  display: none;
+}
+
+.form-container .gform_fields .gfield.gfield_error input {
+  border: 2px solid red;
 }
 
 .home-one-place-block-top{
@@ -917,7 +1027,7 @@ body{
 .form-container .gform_footer{
   position: absolute;
   right: 0px;
-  bottom: 0px;
+  bottom: 25px;
 }
 
 .footer--mobile{
@@ -993,8 +1103,7 @@ body{
 }
 
 .how-we-work-ownership-block .block-title--small{
-  /* max-width: 900px; */
-  margin: auto;
+  margin: 0 0 65px 0;
   letter-spacing: -2px;
 }
 
@@ -1060,7 +1169,7 @@ body{
 }
 
 .how-we-work-list-row{
-  margin-top: 40px;
+  margin-top: 65px;
 }
 
 .how-we-work-list-block{
@@ -1155,7 +1264,7 @@ body{
 }
 
 .description-block{
-  padding: 50px 0px;
+  padding: 65px 0px;
 }
 
 .image-text-block{

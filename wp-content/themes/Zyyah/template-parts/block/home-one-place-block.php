@@ -36,7 +36,7 @@
 	</div>
 	<div class="home-one-place-block-frame">
 		<div class="home-one-place-block-frame-rect"></div>
-		<img class="home-one-place-block-frame-img" src="<?php echo get_template_directory_uri()?>/library/images/phone.png" alt="Phone Image">
+		<img class="home-one-place-block-frame-img" src="<?php echo get_template_directory_uri()?>/library/images/home-phone.png" alt="Phone Image">
 	</div>
 	<div class="container--large">
 		<div class="home-one-place-block-border-bottom"></div>

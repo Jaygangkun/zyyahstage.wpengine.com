@@ -3,7 +3,7 @@
 <section class="description-block">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-9 mx-auto">
+			<div class="col-lg-8 mx-auto">
 				<div class="description-text1"><?php the_field('description1')?></div>
 				<div class="description-text2"><?php the_field('description2')?></div>
 				<?php

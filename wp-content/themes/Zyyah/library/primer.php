@@ -117,7 +117,10 @@ function primer_scripts_and_styles() {
 
     // modernizr (without media query polyfill)
     wp_register_script( 'primer-modernizr', get_stylesheet_directory_uri() . '/library/js/libs/modernizr.custom.min.js', array(), '2.5.3', false );
-
+		
+		// register chosen stylesheet
+		wp_register_style( 'chosen-stylesheet', get_stylesheet_directory_uri() . '/library/css/libs/chosen.css', array(), '', 'all' );
+		
     // register main stylesheet
     wp_register_style( 'primer-stylesheet', get_stylesheet_directory_uri() . '/library/css/style.css', array(), '', 'all' );
     
@@ -131,17 +134,22 @@ function primer_scripts_and_styles() {
     if ( is_singular() AND comments_open() AND (get_option('thread_comments') == 1)) {
       wp_enqueue_script( 'comment-reply' );
     }
+		
+		//adding chosen js file in the footer
+		wp_register_script( 'chosen-js', get_stylesheet_directory_uri() . '/library/js/libs/chosen.jquery.min.js', array( 'jquery' ), '', true );
 
     //adding scripts file in the footer
     wp_register_script( 'primer-js', get_stylesheet_directory_uri() . '/library/js/scripts.js', array( 'jquery' ), '', true );
 
     // enqueue styles and scripts
+		wp_enqueue_style( 'chosen-stylesheet' );
     wp_enqueue_style( 'primer-stylesheet' );
     wp_enqueue_style( 'responsive-stylesheet' );
     wp_enqueue_style('primer-ie-only');
 
     wp_enqueue_script( 'jquery' );
     wp_enqueue_script( 'primer-modernizr' );
+		wp_enqueue_script( 'chosen-js' );
     wp_enqueue_script( 'primer-js' );
 
   }

@@ -3,7 +3,7 @@
 <section class="how-we-work-list-block" style="background-color:<?php the_field('background_color')?>">
 	<div class="container--large">
 		<div class="row">
-			<div class="col-lg-7 mx-auto">
+			<div class="col-lg-6 mx-auto">
 				<h2 class="block-title--small"><?php the_field('title')?></h2>
 				<div class="block-desc"><?php the_field('description')?></div>
 			</div>
