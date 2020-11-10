@@ -397,6 +397,25 @@
     .image-text-block{
         padding: 100px 0px;
     }
+
+    .contact-block{
+        padding-top: 40px;
+        padding-bottom: 80px;
+    }
+
+    .contact-form-container .gform_fields .gfield:nth-of-type(1){
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    .contact-form-container .gform_fields .gfield:nth-of-type(2){
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .contact-form-container{
+        margin-top: 20px;
+    }
 }
 
 /* Extra Small Devices, Phones */ 
@@ -533,6 +552,18 @@
     .about-hero-title-wrap {
         margin-top: 140px;
         padding-bottom: 50px;
+    }
+
+    .contact-block .block-title{
+        margin-bottom: 20px;
+    }
+
+    .contact-form-title{
+        font-size: 28px;
+    }
+
+    .contact-block{
+        padding-bottom: 40px;
     }
 }
 
