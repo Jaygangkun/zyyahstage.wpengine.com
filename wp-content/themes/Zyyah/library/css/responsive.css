@@ -188,11 +188,6 @@
 
     .how-we-work-hero-img-wrap{
         width: 320px;
-    }
-
-    .how-we-work-hero-img-wrap{
-        width: 320px;
-        height: 480px;
         margin-top: -240px;
         margin-left: 50%;
         transforM: translateX(-50%);

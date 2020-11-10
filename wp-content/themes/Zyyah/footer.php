@@ -76,7 +76,7 @@
 									$facebook_link = get_field('facebook_link', 'option');
 									if($facebook_link){
 										?>
-										<a class="footer-social-link" href="<?php echo $facebook_link['url']?>" target="_blank">
+										<a class="footer-social-link" href="<?php echo $facebook_link?>" target="_blank">
 											<img class="footer-social-link__img" src="<?php echo get_template_directory_uri()?>/library/images/icon-facebook.svg" alt="Facebook Icon">
 										</a>
 										<?php
@@ -86,7 +86,7 @@
 									$linkedin_link = get_field('linkedin_link', 'option');
 									if($linkedin_link){
 										?>
-										<a class="footer-social-link" href="<?php echo $linkedin_link['url']?>" target="_blank">
+										<a class="footer-social-link" href="<?php echo $linkedin_link?>" target="_blank">
 											<img class="footer-social-link__img" src="<?php echo get_template_directory_uri()?>/library/images/icon-linkedin.svg" alt="Linkedin Icon">
 										</a>
 										<?php
