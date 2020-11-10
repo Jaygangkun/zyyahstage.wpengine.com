@@ -498,6 +498,7 @@ body{
   font-size: 18px;
   color: #908F9A;
   padding: 0px 45px;
+  font-weight: 100;
 }
 
 .navbar-nav .menu-item:first-of-type .nav-link{
@@ -561,6 +562,7 @@ body{
   font-size: 14px;
   margin-top: 100px;
   color: #FFFFFF;
+  font-weight: 100;
 }
 
 .footer-contact-row{
@@ -576,6 +578,7 @@ body{
 .footer-contact-value{
   color: #FFFFFF;
   font-size: 16px;  
+  font-weight: 100;
 }
 
 .footer-email-link{
@@ -613,6 +616,7 @@ body{
   font-size: 18px;
   color: #908F9A;
   padding-left: 50px;
+  font-weight: 100;
 }
 
 .footer-nav .menu-item a:hover{
@@ -697,6 +701,15 @@ body{
 .home-management-item-col{
   text-align: center;
   margin-bottom: 50px;
+  padding: 0px 80px;
+}
+
+.home-management-item-col:nth-of-type(3n + 1){
+  padding-left: 0px;
+}
+
+.home-management-item-col:nth-of-type(3n + 3){
+  padding-right: 0px;
 }
 
 .item-title{
@@ -704,11 +717,13 @@ body{
   color: #785AF2;
   margin-top: 10px;
   margin-bottom: 10px;
+  letter-spacing: -2px;
 }
 
 .block-desc{
   color: #232137;
   font-size: 22px;
+  font-weight: 100;
 }
 
 .container--large{
@@ -761,6 +776,7 @@ body{
 
 .signup-block .block-title--small{
   color: #FFFFFF;
+  letter-spacing: -2px;
 }
 
 .form-container .gform_fields{
@@ -774,6 +790,7 @@ body{
   color: #302E42;
   font-size: 18px;
   width: 100%;
+  font-family: sofia-pro, sans-serif;
 }
 
 .form-container .gform_fields .gfield input::-webkit-input-placeholder { /* Edge */
@@ -790,16 +807,19 @@ body{
 
 .form-container input[type="submit"]{
   font-size: 18px;
-  padding: 10px 40px;
+  padding: 19px 40px;
   display: inline-block;
-  border-radius: 26px;
+  border-radius: 60px;
   text-decoration: none;
   cursor: pointer;
-  color: #FFFFFF; 
+  color: #FFFFFF;
   color: #FFFFFF !important;
   background: #785AF2;
   border: 2px solid #FFFFFF;
   appearance: none;
+  min-width: 260px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .form-container .gform_fields .gfield:nth-of-type(1){
@@ -956,6 +976,7 @@ body{
 .how-we-work-hero-bottom .block-title{
   color: #232137;
   /* min-width: 940px; */
+  margin-bottom: 40px;
 }
 
 .how-we-work-hero-content-wrap .block-desc{
@@ -972,8 +993,9 @@ body{
 }
 
 .how-we-work-ownership-block .block-title--small{
-  max-width: 900px;
+  /* max-width: 900px; */
   margin: auto;
+  letter-spacing: -2px;
 }
 
 .how-we-work-professionals-top-title-wrap{
@@ -993,6 +1015,7 @@ body{
   line-height: 54px;
   margin: 0px 10px;
   text-transform: uppercase;
+  letter-spacing: 6px;
 }
 
 .how-we-work-professionals-main{
@@ -1107,7 +1130,7 @@ body{
 }
 
 .about-hero-back-left{
-  width: 50%;
+  width: 60%;
   background: #F2EFFE;
 }
 
@@ -1128,6 +1151,7 @@ body{
 .description-text2{
   color: #000000;
   font-size: 22px;
+  font-weight: 100;
 }
 
 .description-block{
@@ -1140,9 +1164,24 @@ body{
 
 .image-text-block .block-title{
   text-align: center;
+  text-shadow: 0px 3px 16px #00000085;
 }
 
 .image-text-block .home-desc{
   text-align: center;
   margin-top: 30px;
+  text-shadow: 0px 3px 16px #00000085;
+}
+
+.navbar-brand{
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.home-hero-block .block-title{
+  text-shadow: 0px 3px 16px #00000085;
+}
+
+.home-one-place-block .block-title--small{
+  text-align: left;
 }

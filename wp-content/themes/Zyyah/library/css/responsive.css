@@ -273,6 +273,17 @@
         right: 0px;
     }
 
+    .home-management-item-col{
+        padding: 0px 15px;
+    }
+
+    .home-management-item-col:nth-of-type(3n + 1){
+        padding-left: 15px;
+    }
+
+    .home-management-item-col:nth-of-type(3n + 3){
+        padding-right: 15px;
+    }
 }
 
 /* Small Devices, Tablets */

@@ -3,9 +3,9 @@
 <section class="home-connect-block">
 	<div class="container container--large-767">
 		<h2  class="block-title--small"><?php the_field('title')?></h2>
-		<div class="row home-connect-list">
+		<div class="row d-flex justify-content-between home-connect-list">
 			<?php if( have_rows('list') ): while ( have_rows('list') ) : the_row(); ?>
-			<div class="col-lg-6 home-connect-item-col">
+			<div class="col-lg-5 home-connect-item-col">
 				<?php
 				$icon = get_sub_field('icon');
 				if($icon){

@@ -8,9 +8,9 @@
 				<div class="block-desc"><?php the_field('description')?></div>
 			</div>
 		</div>
-		<div class="row how-we-work-list-row">
+		<div class="row how-we-work-list-row d-flex justify-content-between">
 		<?php if( have_rows('list') ): while ( have_rows('list') ) : the_row(); ?>
-			<div class="col-lg-6 how-we-work-list-col">
+			<div class="col-lg-5 how-we-work-list-col">
 				<?php
 				$icon = get_sub_field('icon');
 				if($icon){
